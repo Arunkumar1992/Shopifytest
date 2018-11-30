@@ -1,7 +1,6 @@
-console.log("Customer :: {{ order_number }} ");
-console.log("Customer :: {{customer.email}}) ");
-
-console.log("Order :: {{ total_price | money_without_currency }}" );
-var emailadd = {{customer.email}}
-var cemail= "{{customer.email}}"; 
-alert(cemail);
+function ZrefTrack(){
+    var cemail= "{{customer.email}}"; 
+    var orderprice = "{{ total_price | money_without_currency }}";
+    var orderid = "{{ order_number }}";
+    alert ("cemail :: " + cemail + "orderprice :: " + orderprice + "orderid :: " + orderid);
+}
